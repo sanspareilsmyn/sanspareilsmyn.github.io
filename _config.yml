@@ -1,7 +1,7 @@
 # Site settings
 title:          Sangmin Yoon
 description:    "Sangmin Yoon"
-baseurl:        "/sangmin-yoon"
+baseurl:        "https://sanspareilsmyn.github.io"
 url:            "https://sanspareilsmyn.github.io"
 
 # Google Analytics
