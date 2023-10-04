@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "About"
-author: "Sangmin Yoon"
+author: "Chester"
 permalink: /about/
 ---
 
