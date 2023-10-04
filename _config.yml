@@ -1,17 +1,17 @@
 # Site settings
-title:          Tale
-description:    "Minimal Jekyll theme for storytellers"
-baseurl:        "/tale"
-url:            "https://chesterhow.github.io"
+title:          Sangmin Yoon
+description:    "Sangmin Yoon"
+baseurl:        "/sangmin-yoon"
+url:            "https://sanspareilsmyn.github.io"
 
 # Google Analytics
 google_analytics: UA—XXXXXXXX-X
 
 # Author
 author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+  name:         Sangmin Yoon
+  url:          https://sanspareilsmyn.github.io
+  email:        sanspareilsmyn@gmail.com
 
 # Build settings
 markdown:       kramdown
