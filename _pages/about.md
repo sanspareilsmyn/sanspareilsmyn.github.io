@@ -3,7 +3,7 @@ layout: page
 title: About Me
 ---
 
-I was born in 1995 and currently work as a software engineer in Seoul. I constantly remind myself not to be confined by the label of "software engineer." I'm an individual who enjoys thinking about and reading on a wide range of topics. My interests span across diverse subjects including the brain and unconscious mind, simulation theory, AI policies, life after super intelligence, open source, 20th century french philosophy, weight training, cooking, travel, Bitcoin, and Buddhist philosophy.
+I was born in 1995 and currently work as a software engineer in Seoul. I constantly remind myself not to be confined by the label of "software engineer." I'm an individual who enjoys thinking about and reading on a wide range of topics. My interests span across diverse subjects including the brain and unconscious mind, simulation argument, AI policies, life after super intelligence, open source, 20th century french philosophy, weight training, cooking, travel, Bitcoin, and Buddhist philosophy.
 
 ## Contact & Connect
 
