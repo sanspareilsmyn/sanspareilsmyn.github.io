@@ -4,7 +4,7 @@
  <title>Sangmin Yoon</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2025-01-14T10:34:42+09:00</updated>
+ <updated>2025-01-14T11:54:27+09:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
@@ -13,46 +13,77 @@
 
  
  <entry>
-   <title>CSS hacks you may not know</title>
-   <link href="http://localhost:4000/2014/05/12/css-hacks-you-may-not-know"/>
-   <updated>2014-05-12T00:00:00+09:00</updated>
-   <id>http://localhost:4000/2014/05/12/css-hacks-you-may-not-know</id>
-   <content type="html">&lt;p&gt;Lorem ipsum dolor amet tousled viral art party blue bottle single-origin coffee cardigan, selvage man braid helvetica. Banh mi taxidermy meditation microdosing. Selvage cornhole YOLO, small batch vexillologist raclette VHS prism sustainable 8-bit ugh semiotics letterpress disrupt pop-up. Celiac shabby chic ugh, jianbing whatever kitsch tattooed edison bulb kogi irony etsy.&lt;/p&gt;
+   <title>GPT 1, 2, 3 and 4</title>
+   <link href="http://localhost:4000/2025/01/14/gpt-1-2-3-and-4"/>
+   <updated>2025-01-14T00:00:00+09:00</updated>
+   <id>http://localhost:4000/2025/01/14/gpt-1,-2-,3-and-4</id>
+   <content type="html">&lt;h3 id=&quot;1-gpt-1&quot;&gt;1) GPT-1&lt;/h3&gt;
 
-&lt;p&gt;Franzen polaroid hammock iceland blue bottle woke disrupt tilde kale chips raw denim ramps vaporware before they sold out irony. Narwhal vaporware offal shaman celiac kinfolk activated charcoal salvia lomo irony readymade normcore. Yr activated charcoal kombucha, man braid whatever biodiesel hella crucifix adaptogen bicycle rights small batch skateboard mixtape. Hot chicken sustainable green juice 90’s. Ennui kickstarter hella pug, meggings man bun shaman messenger bag. Chambray adaptogen kombucha pug affogato, kogi green juice distillery ugh banh mi.&lt;/p&gt;
+&lt;p&gt;GPT-1 introduced a groundbreaking approach to natural language processing by leveraging the power of unsupervised pre-training. This technique involves training a language model on a massive amount of text data without any explicit labels. The resulting model, equipped with a deep understanding of language, can then be fine-tuned on specific tasks with relatively small labeled datasets.&lt;/p&gt;
 
-&lt;p&gt;VHS roof party waistcoat cold-pressed, street art wolf master cleanse affogato franzen. Shaman iceland pour-over intelligentsia typewriter tilde, pitchfork copper mug. Wayfarers kickstarter adaptogen vinyl beard kombucha. Organic pinterest master cleanse, mixtape fam gentrify lo-fi kogi.&lt;/p&gt;
+&lt;h4 id=&quot;key-differences-from-traditional-supervised-learning&quot;&gt;Key Differences from Traditional Supervised Learning&lt;/h4&gt;
 
-&lt;p&gt;Salvia blue bottle fanny pack mlkshk normcore YOLO viral umami four dollar toast skateboard. Chambray taxidermy slow-carb street art chartreuse. Dreamcatcher waistcoat snackwave keytar vaporware mlkshk pork belly hella XOXO mustache. Tattooed semiotics edison bulb, disrupt polaroid craft beer vape enamel pin bespoke flannel letterpress brooklyn subway tile copper mug. Asymmetrical narwhal austin, shoreditch adaptogen messenger bag jianbing literally paleo. Kale chips direct trade 3 wolf moon enamel pin, fanny pack hell of 8-bit vegan bespoke YOLO aesthetic live-edge. Retro succulents before they sold out whatever bushwick.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Pre-training: GPT-1’s approach starts with a pre-trained model, whereas traditional supervised learning trains a model from random initialization.&lt;/li&gt;
+  &lt;li&gt;Data Efficiency: GPT-1 requires significantly less labeled data for fine-tuning, making it more practical for real-world applications.&lt;/li&gt;
+  &lt;li&gt;Transfer Learning: GPT-1 enables transfer learning, allowing the model to adapt to new tasks with minimal effort.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Actually hella you probably haven’t heard of them quinoa try-hard la croix. Street art schlitz actually hell of pour-over air plant. Post-ironic franzen brunch mumblecore readymade. Food truck photo booth polaroid, gochujang vegan street art yr before they sold out man bun. Tilde selfies chia pitchfork everyday carry post-ironic mumblecore sartorial VHS master cleanse activated charcoal biodiesel williamsburg cronut jean shorts. Poutine helvetica keffiyeh butcher pop-up.&lt;/p&gt;
+&lt;h4 id=&quot;how-does-supervised-fine-tuning-work-in-gpt-1&quot;&gt;How does supervised fine-tuning work in GPT-1?&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Pre-trained Model: A language model is first trained on a massive corpus of text data. This pre-training step allows the model to learn the statistical properties of language, such as grammar and semantics.&lt;/li&gt;
+  &lt;li&gt;Task-Specific Fine-tuning: The pre-trained model is then adapted to a specific task using a labeled dataset. This involves adding a linear layer to the model and training it on the new task while keeping most of the pre-trained parameters fixed.&lt;/li&gt;
+  &lt;li&gt;Input Transformations: To accommodate various tasks, GPT-1 employs input transformations. For instance, in question answering, the question, context, and answer choices are concatenated into a single sequence.&lt;/li&gt;
+  &lt;li&gt;Objective Function: The model is trained to minimize a combined loss function that includes both a supervised loss for the specific task and an unsupervised loss to preserve the language modeling capabilities.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;.♫ { background: #222; color: #FFF; } 
-.ಠ_ಠ { background: #ccc; color: #fff; }
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;2-gpt-2&quot;&gt;2) GPT-2&lt;/h3&gt;
 
-&lt;p&gt;Lorem ipsum dolor amet tousled viral art party blue bottle single-origin coffee cardigan, selvage man braid helvetica. Banh mi taxidermy meditation microdosing. Selvage cornhole YOLO, small batch vexillologist raclette VHS prism sustainable 8-bit ugh semiotics letterpress disrupt pop-up. Celiac shabby chic ugh, jianbing whatever kitsch tattooed edison bulb kogi irony etsy.&lt;/p&gt;
+&lt;h4 id=&quot;key-advancements-of-gpt-2&quot;&gt;Key Advancements of GPT-2&lt;/h4&gt;
+&lt;p&gt;GPT-1 introduced the concept of pre-training a language model on a massive amount of text data and then fine-tuning it on specific tasks.
+GPT-2 took this concept to the next level by training an even larger model on a more diverse dataset.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Increased Model Size: GPT-2 employed significantly larger models, allowing for more complex pattern recognition and better generalization.&lt;/li&gt;
+  &lt;li&gt;Unsupervised Multitask Learning: Unlike GPT-1, which relied on supervised fine-tuning for specific tasks, GPT-2 demonstrated the ability to perform a wide range of tasks directly from the pre-trained model, without explicit task-specific training.&lt;/li&gt;
+  &lt;li&gt;Improved Zero-Shot Learning: GPT-2 exhibited remarkable zero-shot learning capabilities, meaning it could perform tasks it had not been explicitly trained on, simply by providing the task as text.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Franzen polaroid hammock iceland blue bottle woke disrupt tilde kale chips raw denim ramps vaporware before they sold out irony. Narwhal vaporware offal shaman celiac kinfolk activated charcoal salvia lomo irony readymade normcore. Yr activated charcoal kombucha, man braid whatever biodiesel hella crucifix adaptogen bicycle rights small batch skateboard mixtape. Hot chicken sustainable green juice 90’s. Ennui kickstarter hella pug, meggings man bun shaman messenger bag. Chambray adaptogen kombucha pug affogato, kogi green juice distillery ugh banh mi.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;3-gpt-3&quot;&gt;3) GPT-3&lt;/h3&gt;
+&lt;p&gt;GPT-3 represents a significant leap forward in the evolution of large language models, building upon the successes of its predecessors, GPT-1 and GPT-2.&lt;/p&gt;
 
-&lt;p&gt;VHS roof party waistcoat cold-pressed, street art wolf master cleanse affogato franzen. Shaman iceland pour-over intelligentsia typewriter tilde, pitchfork copper mug. Wayfarers kickstarter adaptogen vinyl beard kombucha. Organic pinterest master cleanse, mixtape fam gentrify lo-fi kogi.&lt;/p&gt;
+&lt;h4 id=&quot;key-advancements-of-gpt-3&quot;&gt;Key Advancements of GPT-3&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Massive Scale: GPT-3 boasts a significantly larger number of parameters compared to GPT-2, resulting in a dramatic increase in model capacity and computational power.&lt;/li&gt;
+  &lt;li&gt;Enhanced Capabilities: GPT-3 demonstrated impressive abilities in various NLP tasks, including:
+    &lt;ul&gt;
+      &lt;li&gt;Text generation: Generating human-like text, writing stories, translating languages, and even composing poems.&lt;/li&gt;
+      &lt;li&gt;Question answering: Providing comprehensive and informative answers to a wide range of questions.&lt;/li&gt;
+      &lt;li&gt;Code generation: Writing and debugging code in various programming languages.&lt;/li&gt;
+      &lt;li&gt;Creative content creation: Generating novel content, such as scripts, articles, and even musical pieces.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;In-context learning: GPT-3 exhibited remarkable in-context learning capabilities, demonstrating the ability to adapt to new tasks or concepts simply by providing a few examples within the input.&lt;/li&gt;
+  &lt;li&gt;Few-shot learning: GPT-3 achieved impressive results in few-shot learning scenarios, where the model is provided with only a few labeled examples for a new task.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Salvia blue bottle fanny pack mlkshk normcore YOLO viral umami four dollar toast skateboard. Chambray taxidermy slow-carb street art chartreuse. Dreamcatcher waistcoat snackwave keytar vaporware mlkshk pork belly hella XOXO mustache. Tattooed semiotics edison bulb, disrupt polaroid craft beer vape enamel pin bespoke flannel letterpress brooklyn subway tile copper mug. Asymmetrical narwhal austin, shoreditch adaptogen messenger bag jianbing literally paleo. Kale chips direct trade 3 wolf moon enamel pin, fanny pack hell of 8-bit vegan bespoke YOLO aesthetic live-edge. Retro succulents before they sold out whatever bushwick.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;4-gpt-4&quot;&gt;4) GPT-4&lt;/h3&gt;
+&lt;p&gt;GPT-4 represents the latest advancement in the GPT series of large language models, pushing the boundaries of AI capabilities even further.&lt;/p&gt;
 
-&lt;p&gt;Actually hella you probably haven’t heard of them quinoa try-hard la croix. Street art schlitz actually hell of pour-over air plant. Post-ironic franzen brunch mumblecore readymade. Food truck photo booth polaroid, gochujang vegan street art yr before they sold out man bun. Tilde selfies chia pitchfork everyday carry post-ironic mumblecore sartorial VHS master cleanse activated charcoal biodiesel williamsburg cronut jean shorts. Poutine helvetica keffiyeh butcher pop-up.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;a { text-decoration: overline red wavy; }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Lorem ipsum dolor amet tousled viral art party blue bottle single-origin coffee cardigan, selvage man braid helvetica. Banh mi taxidermy meditation microdosing. Selvage cornhole YOLO, small batch vexillologist raclette VHS prism sustainable 8-bit ugh semiotics letterpress disrupt pop-up. Celiac shabby chic ugh, jianbing whatever kitsch tattooed edison bulb kogi irony etsy.&lt;/p&gt;
-
-&lt;p&gt;Franzen polaroid hammock iceland blue bottle woke disrupt tilde kale chips raw denim ramps vaporware before they sold out irony. Narwhal vaporware offal shaman celiac kinfolk activated charcoal salvia lomo irony readymade normcore. Yr activated charcoal kombucha, man braid whatever biodiesel hella crucifix adaptogen bicycle rights small batch skateboard mixtape. Hot chicken sustainable green juice 90’s. Ennui kickstarter hella pug, meggings man bun shaman messenger bag. Chambray adaptogen kombucha pug affogato, kogi green juice distillery ugh banh mi.&lt;/p&gt;
-
-&lt;p&gt;VHS roof party waistcoat cold-pressed, street art wolf master cleanse affogato franzen. Shaman iceland pour-over intelligentsia typewriter tilde, pitchfork copper mug. Wayfarers kickstarter adaptogen vinyl beard kombucha. Organic pinterest master cleanse, mixtape fam gentrify lo-fi kogi.&lt;/p&gt;
-
-&lt;p&gt;Salvia blue bottle fanny pack mlkshk normcore YOLO viral umami four dollar toast skateboard. Chambray taxidermy slow-carb street art chartreuse. Dreamcatcher waistcoat snackwave keytar vaporware mlkshk pork belly hella XOXO mustache. Tattooed semiotics edison bulb, disrupt polaroid craft beer vape enamel pin bespoke flannel letterpress brooklyn subway tile copper mug. Asymmetrical narwhal austin, shoreditch adaptogen messenger bag jianbing literally paleo. Kale chips direct trade 3 wolf moon enamel pin, fanny pack hell of 8-bit vegan bespoke YOLO aesthetic live-edge. Retro succulents before they sold out whatever bushwick.&lt;/p&gt;
-
-&lt;p&gt;Actually hella you probably haven’t heard of them quinoa try-hard la croix. Street art schlitz actually hell of pour-over air plant. Post-ironic franzen brunch mumblecore readymade. Food truck photo booth polaroid, gochujang vegan street art yr before they sold out man bun. Tilde selfies chia pitchfork everyday carry post-ironic mumblecore sartorial VHS master cleanse activated charcoal biodiesel williamsburg cronut jean shorts. Poutine helvetica keffiyeh butcher pop-up.&lt;/p&gt;
+&lt;h4 id=&quot;key-advancements-of-gpt-4&quot;&gt;Key Advancements of GPT-4&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Enhanced Capabilities: GPT-4 demonstrates significantly improved performance across a wide range of tasks, including:
+    &lt;ul&gt;
+      &lt;li&gt;Creativity: Generating more creative and innovative text formats, such as poems, code, and scripts.&lt;/li&gt;
+      &lt;li&gt;Problem-solving: Exhibiting enhanced reasoning and problem-solving abilities, including the ability to handle more complex and nuanced tasks.&lt;/li&gt;
+      &lt;li&gt;Safety and Reliability: GPT-4 has been developed with a strong emphasis on safety and reliability, aiming to minimize biases, hallucinations, and harmful outputs.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Multimodality: GPT-4 introduces multimodality, allowing it to accept and process both text and image inputs. This opens up new possibilities for applications such as image captioning, visual question answering, and more.&lt;/li&gt;
+  &lt;li&gt;Advanced In-context Learning: GPT-4 further enhances in-context learning capabilities, allowing it to learn and adapt to new tasks with even fewer examples.&lt;/li&gt;
+&lt;/ul&gt;
 </content>
  </entry>
  
