@@ -3,60 +3,11 @@ layout: page
 title: About Me
 ---
 
-## Who I Am
-
-I'm a passionate software engineer and technology enthusiast dedicated to creating innovative digital solutions that make a difference.
-
-## Professional Background
-
-With over 5 years of experience in web development, I specialize in building scalable and user-friendly applications. My expertise spans across modern web technologies and cloud computing.
-
-## Technical Skills
-
-### Programming Languages
-- JavaScript (ES6+)
-- Python
-- TypeScript
-- HTML5 & CSS3
-
-### Frameworks & Libraries
-- React.js
-- Node.js
-- Express
-- Next.js
-- Vue.js
-
-### Tools & Platforms
-- Git & GitHub
-- Docker
-- AWS
-- Netlify
-- Firebase
-
-## Professional Experience
-
-### Senior Frontend Developer | TechInnovate Inc.
-- Led development of responsive web applications
-- Reduced application load time by 40%
-- Implemented modern state management solutions
-
-### Open Source Contributions
-- Actively contribute to several open-source projects
-- Maintainer of lightweight React component library
-
-## Personal Projects
-
-### Portfolio Website
-- Built using Jekyll
-- Implemented SEO best practices
-- Achieved 95+ performance score on Lighthouse
+I was born in 1995 and currently work as a software engineer in Seoul. I constantly remind myself not to be confined by the label of "software engineer." I'm an individual who enjoys thinking about and reading on a wide range of topics. My interests span across diverse subjects including the brain and unconscious mind, simulation theory, AI policies, life after super intelligence, open source, 20th century french philosophy, weight training, cooking, travel, Bitcoin, and Buddhist philosophy.
 
 ## Contact & Connect
 
-- 📧 Email: john.doe@example.com
-- 🔗 LinkedIn: [linkedin.com/in/johndoe](https://linkedin.com/in/johndoe)
-- 💻 GitHub: [github.com/johndoe](https://github.com/johndoe)
-
-## Personal Interests
-
-Beyond coding, I'm an avid rock climber, podcast listener, and machine learning enthusiast. I believe in continuous learning and pushing technological boundaries.
+- Email: sanspareilsmyn@gmail.com
+- Goodreads: [goodreads.com/sangmin-yoon](https://www.goodreads.com/user/show/175845304-sangmin-yoon)
+- LinkedIn: [linkedin.com/in/sangmin-yoon](https://www.linkedin.com/in/sangmin-yoon/)
+- GitHub: [github.com/sanspareilsmyn](https://github.com/sanspareilsmyn)
