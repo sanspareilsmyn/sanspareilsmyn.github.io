@@ -2,8 +2,19 @@
   
     {
 
+      "title"    : "Building RDB from scratch - 01. B+ Tree",
+      "description" : "Exploring the importance of B+ trees in building a tiny relational database (RDB) and reflecting on the implementation insights gained from examining an open-source B+ tree library.",
+      "url"      : "/2025/01/19/building-rdb-from-scratch-01-b-tree",
+      "category" : "",
+      "tags"     : "css",
+      "date"     : "2025-01-19 00:00:00 +0900"
+
+    } ,
+  
+    {
+
       "title"    : "GPT 1, 2, 3 and 4",
-      "description" : "What I learned while reading GPT 1, 2, 3 and 4 papers",
+      "description" : "Explore the evolution of Generative Pre-trained Transformers (GPT) through an in-depth analysis of the key advancements from GPT-1 to GPT-4. This post highlights the transformative techniques and capabilities that have shaped natural language processing.",
       "url"      : "/2025/01/14/gpt-1-2-3-and-4",
       "category" : "",
       "tags"     : "css",
@@ -19,6 +30,17 @@
       "category" : "",
       "tags"     : "css",
       "date"     : "2025-01-02 00:00:00 +0900"
+
+    } ,
+  
+    {
+
+      "title"    : "On the Impossibility of Change",
+      "description" : "Explore the profound psychological and philosophical implications of feeling trapped in a seemingly unchanging state. This post delves into the personal experiences and societal observations that highlight the human desire for flexibility and the potential consequences of feeling stuck.",
+      "url"      : "/2024/12/20/on-the-impossibility-of-change",
+      "category" : "",
+      "tags"     : "css",
+      "date"     : "2024-12-20 00:00:00 +0900"
 
     } 
   

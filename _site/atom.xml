@@ -4,13 +4,107 @@
  <title>Sangmin Yoon</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2025-01-14T14:36:46+09:00</updated>
+ <updated>2025-01-19T14:00:15+09:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Building RDB from scratch - 01. B+ Tree</title>
+   <link href="http://localhost:4000/2025/01/19/building-rdb-from-scratch-01-b-tree"/>
+   <updated>2025-01-19T00:00:00+09:00</updated>
+   <id>http://localhost:4000/2025/01/19/building-rdb-from-scratch-01.-b+-tree</id>
+   <content type="html">&lt;h3 id=&quot;1-why-b-tree&quot;&gt;1. Why B+ tree?&lt;/h3&gt;
+&lt;p&gt;When starting the construction of a lightweight relational database, the B+ tree emerges as a fundamental data structure. Its inherent ability to efficiently index and retrieve data renders it indispensable for managing structured information. Unlike traditional binary search trees, the B+ tree is specifically optimized for disk-based storage, minimizing the number of I/O operations required to access data—a crucial consideration for any relational database where data typically resides on disk, not solely in memory. Thus, the B+ tree is not merely a beneficial option, but rather a cornerstone for any viable small-scale RDB.&lt;br /&gt;
+Furthermore, examining the implementation details of a B+ tree, such as those found in the open-source &lt;code&gt;collinglass/bptree&lt;/code&gt; library, offers valuable insights into practical database design and implementation, which I will explore in this post.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-implementations&quot;&gt;2. Implementations&lt;/h3&gt;
+
+&lt;h4 id=&quot;1-core-data-structures&quot;&gt;1) Core Data Structures&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-gotemplate&quot;&gt;type Tree struct {
+	Root *Node
+}
+
+type Record struct {
+	Value []byte
+}
+
+type Node struct {
+	Pointers []interface{}
+	Keys     []int
+	Parent   *Node
+	IsLeaf   bool
+	NumKeys  int
+	Next     *Node
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Tree represents the entire B+ tree structure, with the Root field serving as the entry point to the tree. It is a basic and clear way to represent the whole B+ tree structure.&lt;br /&gt;
+Record struct separates keys from their byte array values ([]byte), allowing the library to handle diverse data types as long as they can be serialized.&lt;br /&gt;
+Node represents a single B+ tree node, which holds Pointers (to child nodes or record values), Keys, a Parent pointer, a flag for IsLeaf, NumKeys tracking the number of valid keys, and a Next pointer for linked list of leaf nodes. The interface{} type for Pointers enables handling both nodes and records, and NumKeys ensures performance optimization to determine the number of valid keys.&lt;/p&gt;
+
+&lt;h4 id=&quot;2-insertion&quot;&gt;2) Insertion&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-gotemplate&quot;&gt;func (t *Tree) Insert(key int, value []byte) error {
+	// ...
+	if t.Root == nil {
+		return t.startNewTree(key, pointer)
+	}
+	// ...
+    leaf = t.findLeaf(key, false)
+    
+	if leaf.NumKeys &amp;lt; order-1 {
+		insertIntoLeaf(leaf, key, pointer)
+		return nil
+	}
+
+	return t.insertIntoLeafAfterSplitting(leaf, key, pointer)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The insertion process first checks for a root node, creating a new tree if necessary. It locates the correct leaf node via t.findLeaf and then inserts the key if there’s capacity, using insertIntoLeaf as a helper method. When the leaf is full, t.insertIntoLeafAfterSplitting handles the node split, utilizing temporary arrays and demonstrating a “copy-on-write” approach where a new node is created during splits to keep the B+ tree balanced.&lt;/p&gt;
+
+&lt;h4 id=&quot;3-searching&quot;&gt;3) Searching&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-gotemplate&quot;&gt;func (t *Tree) Find(key int, verbose bool) (*Record, error) {
+	i := 0
+	c := t.findLeaf(key, verbose)
+	if c == nil {
+		return nil, errors.New(&quot;key not found&quot;)
+	}
+	for i = 0; i &amp;lt; c.NumKeys; i++ {
+		if c.Keys[i] == key {
+			break
+		}
+	}
+	if i == c.NumKeys {
+		return nil, errors.New(&quot;key not found&quot;)
+	}
+
+	r, _ := c.Pointers[i].(*Record)
+
+	return r, nil
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The search starts with the private findLeaf function, which recursively navigates the tree to locate the appropriate leaf node. Within the leaf node, a loop iterates through the keys to find a match. Upon finding a matching key, the associated value is returned after a type assertion to the Record type. This search logic demonstrates how each node acts as a decision point, guiding the traversal along the correct search path to find the target key.&lt;/p&gt;
+
+&lt;h4 id=&quot;4-deletion&quot;&gt;4) Deletion&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&quot;language-gotemplate&quot;&gt;func (t *Tree) Delete(key int) error {
+	key_record, err := t.Find(key, false)
+	if err != nil {
+		return err
+	}
+	key_leaf := t.findLeaf(key, false)
+	if key_record != nil &amp;amp;&amp;amp; key_leaf != nil {
+		t.deleteEntry(key_leaf, key, key_record)
+	}
+	return nil
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The deletion process begins by using t.Find and t.findLeaf to locate the target node and key. Once found, the t.deleteEntry method is invoked, which orchestrates a complex deletion procedure. This involves removeEntryFromNode to remove the key from the node, and then a series of other operations: adjustRoot to handle root node modifications, and either coalesceNodes or redistributeNodes to maintain the B+ tree’s balance through merging or redistributing nodes, respectively.&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>GPT 1, 2, 3 and 4</title>
@@ -151,6 +245,26 @@ The concept of a “planetary-mass computer,” a hypothetical machine utilizing
   &lt;li&gt;The complexity of the universe: The universe may be inherently chaotic and unpredictable, making it impossible to create a perfect simulation.&lt;/li&gt;
   &lt;li&gt;Algorithmic limitations: Even with infinite computational power, we may not have the algorithms necessary to simulate certain phenomena.&lt;/li&gt;
 &lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>On the Impossibility of Change</title>
+   <link href="http://localhost:4000/2024/12/20/on-the-impossibility-of-change"/>
+   <updated>2024-12-20T00:00:00+09:00</updated>
+   <id>http://localhost:4000/2024/12/20/on-the-impossibility-of-change</id>
+   <content type="html">&lt;h3 id=&quot;reminiscence&quot;&gt;Reminiscence&lt;/h3&gt;
+&lt;p&gt;I’ve often felt most alive when possibilities stretched out before me like an endless horizon. College, for instance, was a time of boundless exploration. I wandered through countless academic paths, discovering countless versions of myself. But it’s the moments when I’ve felt trapped that have truly shaped my perspective.&lt;br /&gt;
+My early days as an engineer were a stark example. I was a cog in a massive machine, my future seemingly predetermined. The realization was chilling. It was as if I were trapped in a glass box, watching my life play out on a loop.&lt;br /&gt;
+Perhaps that’s why I’ve come to believe that the most miserable moments of my life have been those defined by a sense of permanence. When we feel stuck, when we believe that change is impossible, we become prisoners of our own making. I wonder, do others share this sentiment? Are we all searching for a way to escape the confines of our seemingly fixed realities?&lt;/p&gt;
+
+&lt;h3 id=&quot;śūnyatā&quot;&gt;śūnyatā&lt;/h3&gt;
+&lt;p&gt;The illusion of an enduring, unchanging “self,” a solidified &lt;a href=&quot;https://en.wikipedia.org/wiki/%C4%80tman_(Hinduism)&quot;&gt;ātman&lt;/a&gt; in the language of ancient Indian philosophy, is the root of much of our suffering. It’s in these moments of perceived stagnation, when the dharma of constant change seems to have ceased, that despair takes root. &lt;br /&gt;
+But the truth, as I’ve come to understand through the lens of &lt;a href=&quot;https://en.wikipedia.org/wiki/%C5%9A%C5%ABnyat%C4%81&quot;&gt;śūnyatā&lt;/a&gt;, is that there is no fixed, independent self. We are a continuous flow, a dynamic interplay of &lt;a href=&quot;https://en.wikipedia.org/wiki/Skandha&quot;&gt;skandhas&lt;/a&gt; – ever-shifting aggregates of form, sensation, perception, volition, and consciousness. To resist this flow, to cling to a particular state or identity, is to invite &lt;a href=&quot;https://en.wikipedia.org/wiki/Du%E1%B8%A5kha&quot;&gt;duhkha&lt;/a&gt;, the suffering arising from craving and clinging. It’s like trying to grasp a handful of water – the harder you squeeze, the more it slips away. True freedom lies not in resisting the inevitable flux of existence, but in embracing the anicca, the impermanence of all things.&lt;br /&gt;
+In retrospect, I’ve come to realize how profoundly the concept of śūnyatā has permeated my understanding of existence. Recognizing the impermanence inherent in all phenomena has enabled me to cultivate a greater sense of acceptance, allowing me to navigate life’s inevitable ups and downs with greater equanimity. The understanding that all things are subject to change has not only alleviated suffering but has also deepened my appreciation for the present moment.&lt;/p&gt;
+
+&lt;h3 id=&quot;dynamic-self&quot;&gt;Dynamic Self&lt;/h3&gt;
+&lt;p&gt;Jung emphasized the process of &lt;a href=&quot;https://scottjeffrey.com/individuation-process/&quot;&gt;individuation&lt;/a&gt;, where the self integrates with the unconscious, moving toward a more complete state. This process can be likened to a butterfly emerging from its chrysalis, transforming into a wholly new being. Once the self has changed, it cannot revert to its previous state. We are inherently changing beings, and by embracing this change and living actively within it, we can achieve true freedom of being.&lt;/p&gt;
 </content>
  </entry>
  
