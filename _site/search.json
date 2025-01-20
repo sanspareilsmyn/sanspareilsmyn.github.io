@@ -42,6 +42,17 @@
       "tags"     : "css",
       "date"     : "2024-12-20 00:00:00 +0900"
 
+    } ,
+  
+    {
+
+      "title"    : "On Python UDF and Pyspark",
+      "description" : "This post delves into the intricacies of Python User-Defined Functions (UDFs) in PySpark, covering their mechanics, performance considerations, optimization techniques, and practical applications.",
+      "url"      : "/2024/11/07/on-python-udf-and-pyspark",
+      "category" : "",
+      "tags"     : "css",
+      "date"     : "2024-11-07 00:00:00 +0900"
+
     } 
   
 ]
