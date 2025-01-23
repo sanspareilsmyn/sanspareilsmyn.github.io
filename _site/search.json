@@ -2,6 +2,17 @@
   
     {
 
+      "title"    : "Airflow DAG Parsing: How Volumes and File Changes Interact",
+      "description" : "Understanding how Airflow detects DAG file changes and how it interacts with container volumes",
+      "url"      : "/2025/01/23/airflow-dag-parsing-how-volumes-and-file-changes-interact",
+      "category" : "",
+      "tags"     : "css",
+      "date"     : "2025-01-23 00:00:00 +0900"
+
+    } ,
+  
+    {
+
       "title"    : "Building RDB from scratch - 01. B+ Tree",
       "description" : "Exploring the importance of B+ trees in building a tiny relational database (RDB) and reflecting on the implementation insights gained from examining an open-source B+ tree library.",
       "url"      : "/2025/01/19/building-rdb-from-scratch-01-b-tree",

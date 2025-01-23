@@ -4,13 +4,103 @@
  <title>Sangmin Yoon</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2025-01-20T15:18:20+09:00</updated>
+ <updated>2025-01-23T17:07:44+09:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Airflow DAG Parsing: How Volumes and File Changes Interact</title>
+   <link href="http://localhost:4000/2025/01/23/airflow-dag-parsing-how-volumes-and-file-changes-interact"/>
+   <updated>2025-01-23T00:00:00+09:00</updated>
+   <id>http://localhost:4000/2025/01/23/Airflow-DAG-Parsing:-How-Volumes-and-File-Changes-Interact</id>
+   <content type="html">&lt;h3 id=&quot;1-introduction&quot;&gt;1. Introduction&lt;/h3&gt;
+&lt;p&gt;I run Airflow in a Kubernetes environment, relying on a script to pull DAG definitions from a remote Git repository. My goal was to implement domain-specific DAG deployments by dynamically managing &lt;code&gt;.airflowignore&lt;/code&gt; files. I attempted to inject these &lt;code&gt;.airflowignore&lt;/code&gt; files directly into the Kubernetes volume where our DAGs reside. However, this seemingly straightforward approach led to unexpected challenges, uncovering some interesting details about how Airflow interacts with mounted volumes. I explored my process and lessons learned about Airflow’s DAG parsing logic.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-approaches&quot;&gt;2. Approaches&lt;/h3&gt;
+&lt;p&gt;I started by considering a few ideas:&lt;/p&gt;
+
+&lt;h4 id=&quot;1-modifying-gitsyncsh-to-exclude-and-reset-airflowignore&quot;&gt;1. **Modifying &lt;code&gt;gitsync.sh&lt;/code&gt; to exclude and reset &lt;code&gt;.airflowignore&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;This was quickly discarded. Without a remote version of the desired &lt;code&gt;.airflowignore&lt;/code&gt;, I couldn’t reliably restore it via command line.&lt;/p&gt;
+
+&lt;h4 id=&quot;2-using-airflow-variables-to-hide-dags&quot;&gt;2. Using Airflow variables to hide DAGs&lt;/h4&gt;
+&lt;p&gt;I discovered that, except for &lt;code&gt;.airflowignore&lt;/code&gt;, there is no way to prevent DAG parsing. While we could add logic in the DAG’s python file to skip execution based on Airflow variables, this wouldn’t hide DAGs from the UI, which was not our intention.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;```python
+import os
+from airflow import DAG
+from airflow.operators.python import PythonOperator
+from airflow.utils.dates import days_ago
+from airflow.models import Variable
+import json
+
+current_file_name = os.path.basename(__file__)
+
+ignore_dag_files_json = Variable.get(&quot;ignore_dag_files&quot;, default=&apos;[]&apos;)
+ignore_dag_files = json.loads(ignore_dag_files_json)
+
+if current_file_name in ignore_dag_files:
+    print(f&quot;DAG file &apos;{current_file_name}&apos; is in the ignore list. Skipping DAG creation.&quot;)
+    exit()
+    
+with DAG(
+    dag_id=&quot;test_dag&quot;,
+    schedule=None,
+    start_date=days_ago(1),
+    catchup=False,
+) as dag:
+    ...
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;3-dynamically-creating-airflowignore-via-the-api-and-gitsync&quot;&gt;3. &lt;strong&gt;Dynamically Creating &lt;code&gt;.airflowignore&lt;/code&gt; via the API and gitsync&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;This approach involved creating a temporary backup file and using &lt;code&gt;gitsync.sh&lt;/code&gt; to push it to &lt;code&gt;dags/&lt;/code&gt;.airflowignore``. This seemed promising and we confirmed that the files were correctly being copied, however, it didn’t work as expected.&lt;/p&gt;
+
+&lt;h4 id=&quot;4--copying-backed-up-airflowignore&quot;&gt;4.  &lt;strong&gt;Copying backed up &lt;code&gt;.airflowignore&lt;/code&gt;:&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;I stored &lt;code&gt;.airflowignore&lt;/code&gt; at &lt;code&gt;/$DEPLOY_ENV/base-dags/&lt;/code&gt;.airflowignore&lt;code&gt;.backup&lt;/code&gt; and copy this file at &lt;code&gt;dags/&lt;/code&gt;.airflowignore`` using gitsync.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;while true
+do
+    ... 
+    git fetch --depth 1 --prune origin $TARGET_BRANCH
+    git reset --hard origin/$TARGET_BRANCH
+
+    if [ -f &quot;/home1/irteam/deploy/$DEPLOY_ENV/base-dags/`.airflowignore`.backup&quot; ]; then
+        cp &quot;/home1/irteam/deploy/$DEPLOY_ENV/base-dags/`.airflowignore`.backup&quot; &quot;$GIT_DAGS_REPO_HOME/dags/`.airflowignore`&quot;
+        echo &quot;$(date &apos;+%Y-%m-%d %H:%M:%S&apos;) Restored dags/`.airflowignore` from `.airflowignore`.backup&quot;
+    else
+        echo &quot;$(date &apos;+%Y-%m-%d %H:%M:%S&apos;) `.airflowignore`.backup file not found, skipping dags/`.airflowignore` restoration&quot;
+    fi
+
+    echo &quot;$(date &apos;+%Y-%m-%d %H:%M:%S&apos;) dags repo synced.&quot;
+
+    sleep $WAIT_TIME
+done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Although logs confirmed the &lt;code&gt;.airflowignore&lt;/code&gt; was being updated, the changes weren’t being reflected in Airflow. DAGs that should have been hidden were still visible and running. I confirmed there were no permission issues or that the file was modified by another user.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-the-root-of-the-problem-airflow-dag-parsing-and-kubernetes-volume&quot;&gt;3. The Root of the Problem: Airflow DAG Parsing and Kubernetes Volume&lt;/h3&gt;
+&lt;p&gt;I discovered that the issue was related to how Airflow detects file changes, and how file system changes are handled on a mounted volume. Here’s a breakdown:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Airflow’s File Change Detection: Airflow’s &lt;code&gt;DagFileProcessorManager&lt;/code&gt; uses a polling interval to monitor for updates using &lt;code&gt;_file_stats&lt;/code&gt; which stores file metadata and uses this info to populate the &lt;code&gt;_file_path_queue&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;How &lt;code&gt;_file_stats&lt;/code&gt; is Updated: &lt;code&gt;file_stats&lt;/code&gt; is updated by &lt;code&gt;prepare_file_path_queue&lt;/code&gt;, which checks for new files using &lt;code&gt;os.path.getmtime&lt;/code&gt;. This is key to our problem.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;os.path.getmtime&lt;/code&gt; and Volume Metadata: &lt;code&gt;os.path.getmtime&lt;/code&gt; retrieves modification time metadata of the file system’s node.&lt;/li&gt;
+  &lt;li&gt;Git Reset and Volume Manipulation: &lt;code&gt;git reset --hard&lt;/code&gt; directly manipulates the local file system of the volume node. This operation involves deleting the directory and creating new files or setting up metadata on existing files.&lt;/li&gt;
+  &lt;li&gt;Container File Creation and CoW: When you create a file inside a container on a mounted emptyDir volume, you’re making changes in the container’s isolated layer, which is using the Copy-on-Write (CoW) mechanism. The changes are not applied to the volume’s metadata. Even though file creation affects the mtime inside the container, the actual volume node’s mtime does not change.&lt;/li&gt;
+  &lt;li&gt;Airflow’s Perspective: While the Airflow scheduler runs inside the container, the scheduler calls &lt;code&gt;os.path.getmtime()&lt;/code&gt; against the volume’s file system, not the container’s. This means it cannot detect changes made through direct file creation inside the container.&lt;/li&gt;
+  &lt;li&gt;In essence, when I copy &lt;code&gt;.airflowignore&lt;/code&gt; in our &lt;code&gt;gitsync.sh&lt;/code&gt; , I were making changes inside the container’s file system not the volume’s, so Airflow’s file change detection mechanism was not triggered.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;4-conclusion&quot;&gt;4. Conclusion&lt;/h3&gt;
+&lt;p&gt;This experiments clearly show that &lt;code&gt;git reset&lt;/code&gt; is the only method to correctly modify the &lt;code&gt;.airflowignore&lt;/code&gt; file, in a way that Airflow recognizes. This means the &lt;code&gt;.airflowignore&lt;/code&gt; file needs to be managed within the Git repository itself, and the mounted volume needs to have the &lt;code&gt;.airflowignore&lt;/code&gt; file by git reset.
+This ultimately means that a single branch strategy is not viable for our case, because each pipeline needs its specific &lt;code&gt;.airflowignore&lt;/code&gt; which has to exist in Github repository. I need to manage different versions of the &lt;code&gt;.airflowignore&lt;/code&gt; file for each pipeline and need to be stored in Github repository.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Building RDB from scratch - 01. B+ Tree</title>
