@@ -4,7 +4,7 @@
  <title>Sangmin Yoon</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2025-01-27T21:28:49+09:00</updated>
+ <updated>2025-01-27T21:30:06+09:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
@@ -550,10 +550,10 @@ If your UDF requires static data, broadcasting it to executors can significantly
  </entry>
  
  <entry>
-   <title>What happened?: 13th Century</title>
-   <link href="http://localhost:4000/2024/07/05/what-happened-13th-century"/>
+   <title>History: 13th Century</title>
+   <link href="http://localhost:4000/2024/07/05/history-13th-century"/>
    <updated>2024-07-05T00:00:00+09:00</updated>
-   <id>http://localhost:4000/2024/07/05/What-happened?: -13th-Century</id>
+   <id>http://localhost:4000/2024/07/05/History: -13th-Century</id>
    <content type="html">&lt;h3 id=&quot;1-genghis-khan-and-the-mongol-empire&quot;&gt;1. Genghis Khan and the Mongol Empire&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;1162: &lt;a href=&quot;https://en.wikipedia.org/wiki/Genghis_Khan#Early_life&quot;&gt;Birth of Temujin&lt;/a&gt;&lt;/li&gt;

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What happened?: 13th Century"
+title: "History: 13th Century"
 description: "A brief overview of significant events, trends, and developments during the 13th century."
 summary: "Explore key occurrences and shifts in the 12th century, a period of significant transformation in global history."
 tags: ["history"]
