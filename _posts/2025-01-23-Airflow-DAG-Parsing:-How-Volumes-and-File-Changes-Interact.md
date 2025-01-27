@@ -3,7 +3,7 @@ layout: post
 title: "Airflow DAG Parsing: How Volumes and File Changes Interact"
 description: Understanding how Airflow detects DAG file changes and how it interacts with container volumes
 summary: This post explores the intricacies of Airflow's DAG processing mechanism, particularly how it interacts with file changes on mounted volumes in a containerized environment, highlighting the challenges with using dynamic `.airflowignore` files.
-tags: [css]
+tags: [airflow, dag, data engineering, container, docker, orchestration, DevOps]
 ---
 
 ### 1. Introduction

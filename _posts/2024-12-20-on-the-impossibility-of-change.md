@@ -3,7 +3,7 @@ layout: post
 title: On the Impossibility of Change
 description: Explore the profound psychological and philosophical implications of feeling trapped in a seemingly unchanging state. This post delves into the personal experiences and societal observations that highlight the human desire for flexibility and the potential consequences of feeling stuck.
 summary: This article examines the human experience of feeling trapped in a fixed reality. Through personal anecdotes and philosophical reflections, we explore the psychological and societal implications of feeling stuck, and the enduring human quest for change and freedom.
-tags: [css]
+tags: [psychology, philosophy, change, stagnation, personal growth, self-reflection]
 ---
 
 ### Reminiscence

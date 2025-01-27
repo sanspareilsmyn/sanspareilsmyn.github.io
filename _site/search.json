@@ -6,7 +6,7 @@
       "description" : "what i&#39;ve enjoyed: jan 2025",
       "url"      : "/2025/01/27/what-i-ve-enjoyed-jan-2025",
       "category" : "",
-      "tags"     : "css",
+      "tags"     : "whativeenjoyed",
       "date"     : "2025-01-27 00:00:00 +0900"
 
     } ,
@@ -17,7 +17,7 @@
       "description" : "Understanding how Airflow detects DAG file changes and how it interacts with container volumes",
       "url"      : "/2025/01/23/airflow-dag-parsing-how-volumes-and-file-changes-interact",
       "category" : "",
-      "tags"     : "css",
+      "tags"     : "airflow, dag, data engineering, container, docker, orchestration, DevOps",
       "date"     : "2025-01-23 00:00:00 +0900"
 
     } ,
@@ -28,7 +28,7 @@
       "description" : "Exploring the importance of B+ trees in building a tiny relational database (RDB) and reflecting on the implementation insights gained from examining an open-source B+ tree library.",
       "url"      : "/2025/01/19/building-rdb-from-scratch-01-b-tree",
       "category" : "",
-      "tags"     : "css",
+      "tags"     : "database, RDB, B+ tree, data structures, algorithms, implementation, software engineering",
       "date"     : "2025-01-19 00:00:00 +0900"
 
     } ,
@@ -39,7 +39,7 @@
       "description" : "Explore the evolution of Generative Pre-trained Transformers (GPT) through an in-depth analysis of the key advancements from GPT-1 to GPT-4. This post highlights the transformative techniques and capabilities that have shaped natural language processing.",
       "url"      : "/2025/01/14/gpt-1-2-3-and-4",
       "category" : "",
-      "tags"     : "css",
+      "tags"     : "GPT, artificial intelligence, natural language processing, NLP, machine learning, deep learning, transformers",
       "date"     : "2025-01-14 00:00:00 +0900"
 
     } ,
@@ -50,7 +50,7 @@
       "description" : "This blog post examines the computational requirements for simulating human consciousness and human history, drawing insights from research papers on the simulation argument. It highlights the immense computational demands of such simulations and explores the limitations of current technologies. The post also discusses promising avenues for future advancements, such as quantum computing and specialized hardware, that could potentially bring us closer to the realm of sophisticated simulations.",
       "url"      : "/2025/01/02/computational-limits-and-simulation-argument",
       "category" : "",
-      "tags"     : "css",
+      "tags"     : "simulation, computational limits, simulation argument, computer science, artificial intelligence, quantum computing, philosophy",
       "date"     : "2025-01-02 00:00:00 +0900"
 
     } ,
@@ -61,7 +61,7 @@
       "description" : "Explore the profound psychological and philosophical implications of feeling trapped in a seemingly unchanging state. This post delves into the personal experiences and societal observations that highlight the human desire for flexibility and the potential consequences of feeling stuck.",
       "url"      : "/2024/12/20/on-the-impossibility-of-change",
       "category" : "",
-      "tags"     : "css",
+      "tags"     : "psychology, philosophy, change, stagnation, personal growth, self-reflection",
       "date"     : "2024-12-20 00:00:00 +0900"
 
     } ,
@@ -72,7 +72,7 @@
       "description" : "This post delves into the intricacies of Python User-Defined Functions (UDFs) in PySpark, covering their mechanics, performance considerations, optimization techniques, and practical applications.",
       "url"      : "/2024/11/07/on-python-udf-and-pyspark",
       "category" : "",
-      "tags"     : "css",
+      "tags"     : "pyspark",
       "date"     : "2024-11-07 00:00:00 +0900"
 
     } 

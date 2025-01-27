@@ -16,8 +16,8 @@
             "id": "http://localhost:4000/2025/01/27/what-i-ve-enjoyed-jan-2025",
             "title": "what i've enjoyed: jan 2025",
             "summary": "what i've enjoyed: jan 2025",
-            "content_text": "  Triangle of Sadness, Ruben Östlund  The Dude, Quincy Jones  Another Green World, Brian Eno",
-            "content_html": "<ol>  <li><a href=\"https://en.wikipedia.org/wiki/Triangle_of_Sadness\">Triangle of Sadness</a>, Ruben Östlund</li>  <li><a href=\"https://en.wikipedia.org/wiki/The_Dude_(Quincy_Jones_album)\">The Dude</a>, Quincy Jones</li>  <li><a href=\"https://en.wikipedia.org/wiki/Another_Green_World\">Another Green World</a>, Brian Eno</li></ol>",
+            "content_text": "Movie  Triangle of Sadness, Ruben ÖstlundMusic  The Dude, Quincy Jones  Another Green World, Brian EnoGame  Cyberpunk 2077",
+            "content_html": "<h2 id=\"movie\">Movie</h2><ol>  <li><a href=\"https://en.wikipedia.org/wiki/Triangle_of_Sadness\">Triangle of Sadness</a>, Ruben Östlund</li></ol><h2 id=\"music\">Music</h2><ol>  <li><a href=\"https://en.wikipedia.org/wiki/The_Dude_(Quincy_Jones_album)\">The Dude</a>, Quincy Jones</li>  <li><a href=\"https://en.wikipedia.org/wiki/Another_Green_World\">Another Green World</a>, Brian Eno</li></ol><h2 id=\"game\">Game</h2><ol>  <li><a href=\"https://en.wikipedia.org/wiki/Cyberpunk_2077\">Cyberpunk 2077</a></li></ol>",
             "url": "http://localhost:4000/2025/01/27/what-i-ve-enjoyed-jan-2025",
             
             
@@ -43,7 +43,7 @@
             
             
             
-            
+            "tags": ["airflow","dag","data engineering","container","docker","orchestration","DevOps"],
             
             "date_published": "2025-01-23T00:00:00+09:00",
             "date_modified": "2025-01-23T00:00:00+09:00",
@@ -64,7 +64,7 @@
             
             
             
-            
+            "tags": ["database","RDB","B+ tree","data structures","algorithms","implementation","software engineering"],
             
             "date_published": "2025-01-19T00:00:00+09:00",
             "date_modified": "2025-01-19T00:00:00+09:00",
@@ -85,7 +85,7 @@
             
             
             
-            
+            "tags": ["GPT","artificial intelligence","natural language processing","NLP","machine learning","deep learning","transformers"],
             
             "date_published": "2025-01-14T00:00:00+09:00",
             "date_modified": "2025-01-14T00:00:00+09:00",
@@ -106,7 +106,7 @@
             
             
             
-            
+            "tags": ["simulation","computational limits","simulation argument","computer science","artificial intelligence","quantum computing","philosophy"],
             
             "date_published": "2025-01-02T00:00:00+09:00",
             "date_modified": "2025-01-02T00:00:00+09:00",
@@ -127,7 +127,7 @@
             
             
             
-            
+            "tags": ["psychology","philosophy","change","stagnation","personal growth","self-reflection"],
             
             "date_published": "2024-12-20T00:00:00+09:00",
             "date_modified": "2024-12-20T00:00:00+09:00",

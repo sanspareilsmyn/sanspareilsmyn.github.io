@@ -3,7 +3,7 @@ layout: post
 title: Computational Limits and Simulation Argument
 description: This blog post examines the computational requirements for simulating human consciousness and human history, drawing insights from research papers on the simulation argument. It highlights the immense computational demands of such simulations and explores the limitations of current technologies. The post also discusses promising avenues for future advancements, such as quantum computing and specialized hardware, that could potentially bring us closer to the realm of sophisticated simulations.
 summary: This blog post examines the computational requirements for simulating human consciousness and human history, drawing insights from research papers on the simulation argument. It highlights the immense computational demands of such simulations and explores the limitations of current technologies. The post also discusses promising avenues for future advancements, such as quantum computing and specialized hardware, that could potentially bring us closer to the realm of sophisticated simulations.
-tags: [css]
+tags: [simulation, computational limits, simulation argument, computer science, artificial intelligence, quantum computing, philosophy]
 ---
 
 ### 1) Computational Demands of Simulating Reality

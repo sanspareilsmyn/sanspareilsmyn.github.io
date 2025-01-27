@@ -3,7 +3,7 @@ layout: post
 title: On Python UDF and Pyspark
 description: This post delves into the intricacies of Python User-Defined Functions (UDFs) in PySpark, covering their mechanics, performance considerations, optimization techniques, and practical applications.
 summary: Explore the world of Python UDFs in PySpark, understand their workings, identify performance bottlenecks, and learn how to optimize them for efficient distributed data processing.
-tags: [css]
+tags: ["pyspark"]
 ---
 
 ### 1. Introduction

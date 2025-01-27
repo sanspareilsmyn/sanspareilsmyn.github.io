@@ -3,7 +3,7 @@ layout: post
 title: Building RDB from scratch - 01. B+ Tree
 description: Exploring the importance of B+ trees in building a tiny relational database (RDB) and reflecting on the implementation insights gained from examining an open-source B+ tree library.
 summary: This post delves into why B+ trees are essential for a tiny relational database and discusses key learnings from reviewing the collinglass/bptree implementation.
-tags: [css]
+tags: [database, RDB, B+ tree, data structures, algorithms, implementation, software engineering]
 ---
 
 ### 1. Why B+ tree?
