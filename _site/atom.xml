@@ -4,13 +4,26 @@
  <title>Sangmin Yoon</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2025-01-23T17:07:44+09:00</updated>
+ <updated>2025-01-27T12:30:20+09:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>what i&apos;ve enjoyed: jan 2025</title>
+   <link href="http://localhost:4000/2025/01/27/what-i-ve-enjoyed-jan-2025"/>
+   <updated>2025-01-27T00:00:00+09:00</updated>
+   <id>http://localhost:4000/2025/01/27/what-i've-enjoyed:-jan-2025</id>
+   <content type="html">&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Triangle_of_Sadness&quot;&gt;Triangle of Sadness&lt;/a&gt;, Ruben Östlund&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/The_Dude_(Quincy_Jones_album)&quot;&gt;The Dude&lt;/a&gt;, Quincy Jones&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Another_Green_World&quot;&gt;Another Green World&lt;/a&gt;, Brian Eno&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Airflow DAG Parsing: How Volumes and File Changes Interact</title>

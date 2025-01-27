@@ -2,6 +2,17 @@
   
     {
 
+      "title"    : "what i&#39;ve enjoyed: jan 2025",
+      "description" : "what i&#39;ve enjoyed: jan 2025",
+      "url"      : "/2025/01/27/what-i-ve-enjoyed-jan-2025",
+      "category" : "",
+      "tags"     : "css",
+      "date"     : "2025-01-27 00:00:00 +0900"
+
+    } ,
+  
+    {
+
       "title"    : "Airflow DAG Parsing: How Volumes and File Changes Interact",
       "description" : "Understanding how Airflow detects DAG file changes and how it interacts with container volumes",
       "url"      : "/2025/01/23/airflow-dag-parsing-how-volumes-and-file-changes-interact",
