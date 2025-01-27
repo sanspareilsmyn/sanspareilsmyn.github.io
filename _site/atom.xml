@@ -4,7 +4,7 @@
  <title>Sangmin Yoon</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2025-01-27T21:17:15+09:00</updated>
+ <updated>2025-01-27T21:28:49+09:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
@@ -545,6 +545,26 @@ While &lt;code&gt;pickle&lt;/code&gt; is the default serialization method in Pyt
 Choose the smallest possible data type that can accommodate your data to reduce the size of the serialized data. Explicitly specify data types using Spark SQL types when defining UDFs.&lt;/li&gt;
   &lt;li&gt;Broadcasting Data for Efficient Transfer&lt;br /&gt;
 If your UDF requires static data, broadcasting it to executors can significantly reduce the amount of data that needs to be transferred. Broadcasting is a technique to share immutable data with all executors efficiently.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>What happened?: 13th Century</title>
+   <link href="http://localhost:4000/2024/07/05/what-happened-13th-century"/>
+   <updated>2024-07-05T00:00:00+09:00</updated>
+   <id>http://localhost:4000/2024/07/05/What-happened?: -13th-Century</id>
+   <content type="html">&lt;h3 id=&quot;1-genghis-khan-and-the-mongol-empire&quot;&gt;1. Genghis Khan and the Mongol Empire&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;1162: &lt;a href=&quot;https://en.wikipedia.org/wiki/Genghis_Khan#Early_life&quot;&gt;Birth of Temujin&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;1180s-1206: &lt;a href=&quot;https://en.wikipedia.org/wiki/Genghis_Khan#Rise_to_power&quot;&gt;Consolidation of Mongol tribes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;1207-1210: &lt;a href=&quot;https://en.wikipedia.org/wiki/Mongol_conquest_of_Western_Xia&quot;&gt;Campaign against Western Xia&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;1211-1215: &lt;a href=&quot;https://en.wikipedia.org/wiki/Mongol%E2%80%93Jin_War&quot;&gt;Invasion of the Jin Dynasty&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;1216-1218: &lt;a href=&quot;https://en.wikipedia.org/wiki/Mongol_conquest_of_the_Kara-Khitai&quot;&gt;Subjugation of the Kara-Khitai&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;1219-1225: &lt;a href=&quot;https://en.wikipedia.org/wiki/Mongol_conquest_of_the_Khwarazmian_Empire&quot;&gt;Conquest of the Khwarazmian Empire&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;1226-1227: &lt;a href=&quot;https://en.wikipedia.org/wiki/Mongol_conquest_of_Western_Xia#Final_conquest_of_Western_Xia&quot;&gt;Final Campaign against Western Xia&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;1230s-1240s: &lt;a href=&quot;https://en.wikipedia.org/wiki/%C3%96gedei_Khan#Military_expansion&quot;&gt;Campaigns of Ögedei Khan&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;1250s-: &lt;a href=&quot;https://en.wikipedia.org/wiki/Mongol_Empire#Fragmentation&quot;&gt;Fragmentation of the Mongol Empire&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
  </entry>
