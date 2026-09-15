@@ -1,21 +1,15 @@
 ###########
 # site.title
 
-title: jekyllBear
-description: a minimal, text focused blog theme
+title: Sangmin Yoon
+description: Personal notes and experiences by Sangmin Yoon.
 # baseurl: "/jekyllBear" # the subpath of your site, e.g. /blog/
-url: "https://knhash.in/jekyllBear" # the base hostname & protocol for your site
+url: "https://sanspareilsmyn.github.io" # the base hostname & protocol for your site
 # host: 0.0.0.0
 
 
 #########################
 # more settings
-
-plugins:
-  - jekyll-redirect-from
-
-whitelist:
-  - jekyll-redirect-from
 
 markdown: kramdown
 
@@ -32,31 +26,15 @@ compress_html:
 #   sass_dir: css
 #   style:    compressed
 
-collections:
-  my_tags:
-    output: true
-    permalink: /tagged/:slug/
-defaults:
-  -
-    scope:
-      path: ""
-      type: my_tags
-    values:
-      layout: tagged
-
 # baseurl: ""
 permalink: /blog/:slug
 timezone: America/New_York
 future: false
 
-exclude:
-- README.md
-- LICENSE.md
-
 exclude: [vendor]
 
 Blog: /blog
-Life: /life
+About: /about
 
 # Add general links to site pages here
 links:

@@ -5,9 +5,9 @@
     <h2 class="title">{{ site.title }}</h2>
     <nav>
         <p>
-            <a href="{{ site.url }}">Home</a> 
-            <a href="{{ site.url }}{{ site.Blog }}">Blog</a>
-            <a href="{{ site.url }}{{ site.Life }}">Life</a>
+            <a href="{{ site.url }}">홈</a>
+            <a href="{{ site.url }}{{ site.Blog }}">블로그</a>
+            <a href="{{ site.url }}{{ site.About }}">소개</a>
         
             {% for link in site.links %}
                 <a href="{{ site.url }}{{ link[1] }}">{{ link[0] }}</a>

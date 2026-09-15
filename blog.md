@@ -1,8 +1,6 @@
 ---
 layout: blog
-title: Blog
-description: Here be writings
+title: 블로그
+description: 개인적인 경험과 기록.
 permalink: /blog
 ---
-
-Here be writings. Mostly mundane, sometimes fanciful.

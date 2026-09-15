@@ -5,7 +5,7 @@
    FONTS & IMPORTS
    ============================================================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&display=swap');
 
 /* =============================================================================
    CSS CUSTOM PROPERTIES (VARIABLES)
@@ -16,10 +16,10 @@
     --width: 720px;
     
     /* Typography */
-    --font-main: 'IBM Plex Mono', monospace;
-    --font-secondary: 'IBM Plex Mono', monospace;
-    --font-monospace: 'IBM Plex Mono', monospace;
-    --font-scale: 0.9em;
+    --font-main: 'Noto Serif KR', 'Apple SD Gothic Neo', serif;
+    --font-secondary: 'Noto Serif KR', 'Apple SD Gothic Neo', serif;
+    --font-monospace: ui-monospace, 'SFMono-Regular', Consolas, monospace;
+    --font-scale: 1em;
     
     /* Spacing */
     --spacing-xs: 5px;
@@ -190,6 +190,13 @@ img {
     max-width: 100%;
 }
 
+.about-photo {
+    display: block;
+    width: min(100%, 360px);
+    margin: var(--spacing-md) 0;
+    border-radius: var(--radius-md);
+}
+
 blockquote {
     border-left: 1px solid var(--blockquote-color);
     color: var(--code-color);
@@ -330,5 +337,3 @@ input[type=reset] {
     color: var(--text-color);
     opacity: 0.7;
 }
-      
-  
