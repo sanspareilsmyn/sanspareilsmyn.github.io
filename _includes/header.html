@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
     
 <header>
+    {% assign lang_seg = "" %}
+    {% if page.lang == "ko" %}{% assign lang_seg = "/kr/" %}{% elsif page.lang == "en" %}{% assign lang_seg = "/en/" %}{% endif %}
     <h2 class="title">{{ site.title }}</h2>
     <nav>
         <p>
@@ -9,9 +11,9 @@
                 <a href="#" onclick="setLang('ko'); return false;">KR</a> /
                 <a href="#" onclick="setLang('en'); return false;">EN</a>
             </span>
-            <a href="{{ site.url }}"><span class="ko">홈</span><span class="en">Home</span></a>
-            <a href="{{ site.url }}{{ site.Blog }}"><span class="ko">블로그</span><span class="en">Blog</span></a>
-            <a href="{{ site.url }}{{ site.About }}"><span class="ko">소개</span><span class="en">About</span></a>
+            <a href="{{ site.url }}{{ lang_seg }}"><span class="ko">홈</span><span class="en">Home</span></a>
+            <a href="{{ site.url }}{{ site.Blog }}{{ lang_seg }}"><span class="ko">블로그</span><span class="en">Blog</span></a>
+            <a href="{{ site.url }}{{ site.About }}{{ lang_seg }}"><span class="ko">소개</span><span class="en">About</span></a>
         
             {% for link in site.links %}
                 <a href="{{ site.url }}{{ link[1] }}">{{ link[0] }}</a>
@@ -27,6 +29,7 @@
 <script>
     function setLang(lang) {
         localStorage.setItem("lang", lang);
-        document.documentElement.dataset.lang = lang;
+        var base = location.pathname.replace(/\/(kr|en)\/?$/, "").replace(/\/$/, "");
+        location.pathname = base + (lang === "ko" ? "/kr/" : "/en/");
     }
 </script>

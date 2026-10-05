@@ -12,7 +12,7 @@
     <link href='{{ site.baseurl }}/feed.xml' rel='alternate' type='application/atom+xml'>
     <link rel="canonical" href="{{ site.baseurl }}{{ page.url }}">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
-    <script>document.documentElement.dataset.lang = localStorage.getItem("lang") || "ko";</script>
+    <script>document.documentElement.dataset.lang = {% if page.lang %}"{{ page.lang }}"{% else %}localStorage.getItem("lang") || "ko"{% endif %};</script>
 </head>
 
 <body>

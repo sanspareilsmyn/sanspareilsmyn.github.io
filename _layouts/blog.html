@@ -21,7 +21,7 @@ layout: compress
                     </time>
                 </i>
             </span>
-            <a href="{{ site.baseurl }}{{ post.url }}"><span class="ko">{{ post.title }}</span><span class="en">{{ post.title_en | default: post.title }}</span></a>
+            <a href="{{ site.baseurl }}{{ post.url }}{{ lang_seg }}"><span class="ko">{{ post.title }}</span><span class="en">{{ post.title_en | default: post.title }}</span></a>
         </li>
         {% endif %}
         {% endfor %}
