@@ -28,7 +28,7 @@ compress_html:
 
 # baseurl: ""
 permalink: /blog/:slug
-timezone: America/New_York
+timezone: Asia/Singapore
 future: false
 
 exclude: [vendor]

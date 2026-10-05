@@ -5,9 +5,13 @@
     <h2 class="title">{{ site.title }}</h2>
     <nav>
         <p>
-            <a href="{{ site.url }}">홈</a>
-            <a href="{{ site.url }}{{ site.Blog }}">블로그</a>
-            <a href="{{ site.url }}{{ site.About }}">소개</a>
+            <span class="lang-toggle">
+                <a href="#" onclick="setLang('ko'); return false;">KR</a> /
+                <a href="#" onclick="setLang('en'); return false;">EN</a>
+            </span>
+            <a href="{{ site.url }}"><span class="ko">홈</span><span class="en">Home</span></a>
+            <a href="{{ site.url }}{{ site.Blog }}"><span class="ko">블로그</span><span class="en">Blog</span></a>
+            <a href="{{ site.url }}{{ site.About }}"><span class="ko">소개</span><span class="en">About</span></a>
         
             {% for link in site.links %}
                 <a href="{{ site.url }}{{ link[1] }}">{{ link[0] }}</a>
@@ -19,3 +23,10 @@
         </p>
     </nav>
 </header>
+
+<script>
+    function setLang(lang) {
+        localStorage.setItem("lang", lang);
+        document.documentElement.dataset.lang = lang;
+    }
+</script>

@@ -337,3 +337,12 @@ input[type=reset] {
     color: var(--text-color);
     opacity: 0.7;
 }
+
+html[data-lang="ko"] .en,
+html[data-lang="en"] .ko {
+    display: none;
+}
+
+.lang-toggle {
+    float: right;
+}

@@ -5,6 +5,6 @@ permalink: /about
 ---
 
 <img class="about-photo" src="{{ '/assets/images/about-sangmin.jpg' | relative_url }}" alt="그랜드캐니언에서의 Sangmin Yoon">
-
+Senior Software Engineer @ AI Data Foundry Team, [Motional](https://motional.com/) 
 - GitHub: [github.com/sanspareilsmyn](https://github.com/sanspareilsmyn)
-- LinkedIn: [linkedin.com/in/sangminyoon](https://www.linkedin.com/in/sangmin-yoon/)
+- LinkedIn: [linkedin.com/in/sangmin-yoon](https://www.linkedin.com/in/sangmin-yoon/)
