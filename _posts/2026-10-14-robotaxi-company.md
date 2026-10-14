@@ -82,10 +82,9 @@ Uber는 2018년 자사 플랫폼의 이동 거리(약 260억 마일)가 진출 �
 > The experience of a Waymo is certainly magical; it’s also peaceful, and by removing the human from the equation, provides a sense of safety and security that Uber has always struggled with.
 
 반대편 입장도 흥미롭다. 
-- [The Verge의 2026년 설문](https://www.theverge.com/transportation/912357/robotaxi-poll-ev-intelligence-report-waymo-tesla)에서, "100% 안전한" 로보택시와 사람이 운전하는 택시 중에서 로보택시를 고른 사람은 12%였다. 로보택시를 5달러 깎아 줘도 19%로 오르는 데 그쳤다.
-타는 사람도, 안 타겠다는 사람도 가격이 문제가 아니다.   
+- [The Verge의 2026년 설문](https://www.theverge.com/transportation/912357/robotaxi-poll-ev-intelligence-report-waymo-tesla)에서, "100% 안전한" 로보택시와 사람이 운전하는 택시 중에서 로보택시를 고른 사람은 12%였다. 로보택시를 5달러 깎아 줘도 19%로 오르는 데 그쳤다.  
 
-**지금 로보택시를 키우는 힘은 '싸다'가 아니라 '운전자가 없다'이다.**
+타는 사람도, 안 타겠다는 사람도 가격이 문제가 아니다. **지금 로보택시를 키우는 힘은 '싸다'가 아니라 '운전자가 없다'이다.**
 
 ### 9.
 그러니까 지금 로보택시에는 2개의 사업이 겹쳐 있다.
@@ -223,10 +222,9 @@ But the strange thing is that Waymo grew fast even though it was more expensive.
 > The experience of a Waymo is certainly magical; it’s also peaceful, and by removing the human from the equation, provides a sense of safety and security that Uber has always struggled with.
 
 The other side is interesting too. 
-- In [The Verge's 2026 survey](https://www.theverge.com/transportation/912357/robotaxi-poll-ev-intelligence-report-waymo-tesla), only 12% chose a robotaxi when asked to pick between a "100% safe" robotaxi and a human-driven taxi. Even with $5 off the robotaxi, that number rose only to 19%.
-For both those who ride and those who say they won't, price is not the issue.   
+- In [The Verge's 2026 survey](https://www.theverge.com/transportation/912357/robotaxi-poll-ev-intelligence-report-waymo-tesla), only 12% chose a robotaxi when asked to pick between a "100% safe" robotaxi and a human-driven taxi. Even with $5 off the robotaxi, that number rose only to 19%.  
 
-**What's growing robotaxis right now is not 'cheap' but 'no driver.'**
+For both those who ride and those who say they won't, price is not the issue. **What's growing robotaxis right now is not 'cheap' but 'no driver.'**
 
 ### 9.
 So right now, two businesses overlap in robotaxis.
