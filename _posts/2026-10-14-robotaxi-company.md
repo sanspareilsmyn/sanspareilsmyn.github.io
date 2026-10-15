@@ -41,8 +41,6 @@ Uber는 2018년 자사 플랫폼의 이동 거리(약 260억 마일)가 진출 �
 
 ### 4. 
 이 회사들의 경쟁 상대는 택시가 아니라 자가용이다.
-- 테슬라의 [2024년 3분기 실적 자료](https://www.sec.gov/Archives/edgar/data/1318605/000162828024043432/exhibit.htm).
-> "cost per mile below rideshare, personal car ownership and even public transit."
 - 우버의 [2025년 10-K](https://www.sec.gov/Archives/edgar/data/1543151/000154315126000015/uber-20251231.htm). 그들의 경쟁자는 자가용이 우선이고, 택시 회사는 그 다음이다. 
 > Our Mobility offering competes with personal vehicle ownership and usage, which accounts for the majority of passenger miles in the markets that we serve, and traditional transportation services, including taxicab companies and taxi-hailing services, livery and other car services.
 - 우버는 도달 가능한 시장 규모(TAM)을 [5.7조 달러](https://www.sec.gov/Archives/edgar/data/1543151/000119312519144716/d647752d424b4.htm)로 잡았다. 그중 4.7조 달러가 7.5조 마일의 차량 이동이다. 나눠 보면 마일당 약 0.63달러이다.
@@ -51,12 +49,12 @@ Uber는 2018년 자사 플랫폼의 이동 거리(약 260억 마일)가 진출 �
 주목할 숫자는 마일당 0.63달러라는 숫자이다. 2025년 기준 [신차 보유 비용](https://newsroom.aaa.com/2025/09/aaa-new-vehicle-costs-drop-to-11577/)은 연 11,577달러이다. 연 15,000마일을 주행한다고 가정하면 비용은 마일당 약 0.77달러로, 우버의 목표치와 거의 같은 수준이다. 우버의 목표는 결국 고객들에게 "자가용 운전과 같은 돈"으로 라이딩 서비스를 제공하는 것이다. **그러니까 로보택시가 노리는 자리는 택시 기사의 운전석이 아니라 자가용의 운전석이다.**
 
 ### 5. 
-목표는 충분히 야심차 보인다. 그런데 왜 지금까지 택시는 자가용을 이기지 못했나? **답은 인건비 때문이다.**
+목표는 충분히 야심차 보인다. 그런데 왜 지금까지 택시는 자가용을 이기지 못했나? **가격만 놓고 보면, 가장 큰 이유는 인건비이다.**
 - 리프트는 운전자가 주간 승객 결제액의 [최소 70%](https://www.sec.gov/Archives/edgar/data/1759509/000175950925000025/lyft-20241231.htm)를 받도록 보장한다고 밝혔다.
 - 우버의 [2025년 Mobility 매출](https://www.sec.gov/Archives/edgar/data/1543151/000154315126000015/uber-20251231.htm)은 296.7억 달러이고, 거래액은 975억 달러이다. 우버가 가져가는 몫이 대략 30%이고, 나머지 대부분은 운전자에게 간다.
 - [Goldman Sachs](https://www.goldmansachs.com/insights/articles/robotaxis-to-become-a-400-billion-dollar-market-in-2035)는 미국 자가용 비용을 마일당 0.77~1.00달러, 승차 호출을 마일당 2달러 이상으로 본다. [ARK Invest](https://arkinvestmentmanagement.substack.com/p/robotaxis-are-coming-for-your-commute)는 미국 승차 호출 비용을 마일당 2.80달러로 잡는다.  
 
-**택시가 아직까지도 '가끔 타는 서비스'인 가장 큰 이유는 사람이 운전하기 때문이다.** 운전자를 빼면 비용 구조에서 가장 큰 부분이 사라진다. 회사들이 로보택시에 목숨을 거는 이유도 여기에 있다.
+택시가 자가용보다 비싼 가장 큰 이유는 사람이 운전하기 때문이다. 운전자를 빼면 비용 구조에서 가장 큰 부분이 사라진다. **그런데 운전자만 빼면 정말 자가용을 이길 수 있을까?**
 
 ### 6.
 "자가용을 대체하겠다"는 시도는 처음이 아니다. 2010년대 승차 호출도 같은 이야기를 했다. 결과는 기대와 달랐다.
@@ -87,41 +85,53 @@ Uber는 2018년 자사 플랫폼의 이동 거리(약 260억 마일)가 진출 �
 타는 사람도, 안 타겠다는 사람도 가격이 문제가 아니다. **지금 로보택시를 키우는 힘은 '싸다'가 아니라 '운전자가 없다'이다.**
 
 ### 9.
-그러니까 지금 로보택시에는 2개의 사업이 겹쳐 있다.
+여기까지를 정리하면, 로보택시에는 지금 2개의 사업이 겹쳐 있다.
 
-1) 첫 번째는 프리미엄 택시 사업이다. 지금 매출이 일어나고 있는 사업으로, 경쟁 상대는 우버와 리프트이다.  
-2) 두 번째는 자가용 대체 사업이다. 기업 가치를 설명하는 사업으로, 경쟁 상대는 사람들의 자가용이다. 
+1) 첫 번째는 프리미엄 택시 사업이다. 8번에서 본 것처럼 비싸도 이미 팔리고 있고, 지금 매출이 일어나는 사업이다. 경쟁 상대는 우버와 리프트이다.  
+2) 두 번째는 자가용 대체 사업이다. 5~7번에서 본 것처럼 가격은 아직 한참 멀지만, 기업 가치를 설명하는 사업이다. 경쟁 상대는 사람들의 자가용이다. 
 
 시장은 분명히 두 번째 사업에 돈을 내고 있다. [Morgan Stanley](https://sg.finance.yahoo.com/news/morgan-stanley-resets-alphabet-stock-010300083.html)는 웨이모의 1,260억 달러 기업가치가 Alphabet 기업가치의 약 4%라고 계산한다. 반면 지금 매출은 대부분 첫 번째 사업에서 나온다.
 그리고 첫 번째 사업의 프리미엄은 이미 줄고 있다. 웨이모의 우버 대비 프리미엄은 30~40%에서 [12.7%로 줄었다](https://rideobi.com/tesla/).
 **문제는 두 사업이 이기는 조건이 거의 정반대라는 사실이다.** 프리미엄 택시는 비싼 차와 좋은 경험으로 이긴다. 자가용 대체는 싼 차와 높은 가동률로만 이길 수 있다.
 
 ### 10.
-자가용 대체 사업의 어려움은 크게 3가지이다.  
+그러니까 자가용 대체 사업이 이기려면 싼 차와 높은 가동률이 필요하다. 그런데 5~7번에서 본 가격 차이를 줄이는 것만으로는 부족하다. 두 조건 모두 생각보다 훨씬 어렵다.  
 
-1) 빈 차  
+1) 가동률 - 빈 차  
 
 웨이모의 2026년 2분기 전체 주행거리 중 승객이 탄 비율은 [58.9%](https://www.cpuc.ca.gov/regulatory-services/licensing/transportation-licensing-and-analysis-branch/autonomous-vehicle-programs/quarterly-reporting)이다. 나머지 41%는 빈 차로 달렸다. 
 자가용은 이 문제에 대한 비용이 없다. 내 차는 나를 태우러 오지 않아도 되고, 다음 손님을 찾아 돌아다니지도 않는다. **로보택시는 운전자 비용을 없애는 대신, 자가용에는 없던 빈 차 비용을 새로 떠안는다.**
 
-2) 출퇴근 시간
+2) 가동률 - 출퇴근 시간
 
 자가용 주행의 상당 부분은 출퇴근이고, 출퇴근은 모두가 같은 시간에 같은 방향으로 움직인다. 출퇴근 피크에 맞춰 로보택시를 늘리면, 낮과 밤에는 그 차들이 놀게 된다. 피크에 맞추지 않으면 출근길에 차가 없다.
 **자가용의 진짜 경쟁력은 가격이 아니라 '출근 시간에도 내 차는 항상 거기 있다'는 사실이다.** 
 
-3) 자가용도 싸질 수 있음
+3) 가격 - 자가용도 싸질 수 있음
 
 어떻게 보면 가장 근본적인 문제다. 로보택시를 싸게 만드는 기술은 자가용도 싸게 만든다.
-- [Goldman Sachs](https://www.goldmansachs.com/insights/articles/robotaxis-to-become-a-400-billion-dollar-market-in-2035)는 자율주행이 자가용 보유를 크게 줄일 것이라는 우려가 "overstated, at least for the next decade"라고 본다. 로보택시 원가가 마일당 1달러 이하로 내려가더라도 "the hardware enabling those economics would be also affordable enough for consumers to own personally"라는 것이다.
-- 우버도 교외는 "the cost of personal vehicle ownership is lower, and personal vehicle ownership is more convenient"라고 [인정](https://www.sec.gov/Archives/edgar/data/1543151/000154315126000015/uber-20251231.htm)한다.
-- Motional의 CEO도 [인터뷰](https://techcrunch.com/2026/01/11/motional-puts-ai-at-center-of-robotaxi-reboot-as-it-targets-2026-for-driverless-service/)에서 "I think the real long-term vision, you know, for all of this, is putting Level 4 on people's personal cars"라고 말했다.
+- [Goldman Sachs](https://www.goldmansachs.com/insights/articles/robotaxis-to-become-a-400-billion-dollar-market-in-2035)는 자율주행이 자가용 보유를 크게 줄일 것이라는 우려가 적어도 앞으로 10년 동안은 과장되었다고 본다. 로보택시 원가가 마일당 1달러 이하로 내려가더라도, 그 원가를 가능하게 하는 하드웨어는 소비자가 직접 소유할 수 있을 만큼 싸질 것이라는 이유이다.
+> overstated, at least for the next decade ... the hardware enabling those economics would be also affordable enough for consumers to own personally
+- Motional의 CEO도 [인터뷰](https://techcrunch.com/2026/01/11/motional-puts-ai-at-center-of-robotaxi-reboot-as-it-targets-2026-for-driverless-service/)에서 이 모든 것의 진짜 장기 비전은 개인 차량에 Level 4를 넣는 것이라고 말했다.
+> I think the real long-term vision, you know, for all of this, is putting Level 4 on people's personal cars
 
 ### 11.
-여기까지 보면 로보택시가 자가용을 대체한다는 이야기는 아주 먼 미래처럼 느껴진다. 그럼에도 회사들은 왜 돈을 쏟아붓는가? 
-그 너머의 시장은 아주 작은 점유율도 거대하기 때문이다. 다른 말로 하면, **성공 확률이 높아서가 아니라, 틀렸을 때의 손실보다 빠졌을 때의 손실이 더 크기 때문이다.**
+여기까지 보면 운전자를 빼는 것만으로는 자가용을 이기기 어렵고, 로보택시가 자가용을 대체한다는 이야기는 아주 먼 미래처럼 느껴진다. 그럼에도 회사들은 왜 돈을 쏟아붓는가? 
+**내 생각에 가장 설득력 있는 답은 "로보택시를 위한 기술이 자가용도 싸게 만들 수 있음."에 있다.** 로보택시를 싸게 만드는 기술이 자가용도 싸게 만든다는 건, 로보택시 사업에게는 약점이지만 그 기술을 가진 회사에게는 기회이다. 이 회사들이 진짜 만들고 있는 것은 택시가 아니라 운전자를 대체하는 기술이고, 로보택시는 그 기술을 실제 도로에서 검증하면서 돈도 벌 수 있는 첫 번째 시장이다.
+그리고 그 기술이 노리는 시장은 아주 작은 점유율도 거대하다.
+
+- 미국 전체 차량 주행거리 3조 3,238억 마일의 1%만 가져와도 약 332억 마일이다. 지금 우버와 리프트를 합친 약 240억 마일보다 많다.
+- 여기에 자가용 비용인 마일당 0.77달러를 곱하면 연 약 256억 달러이다. 우버의 2025년 Mobility 매출 296.7억 달러에 가까운 규모이다.
+
+반대로 빠졌을 때의 손실도 크다. 다만 그 손실의 모양은 회사마다 다르다.
+- 자동차 회사에게는 위협이다. 자율주행이 결국 자가용에 들어갈 때 그 기술을 갖고 있지 않으면, 남의 기술을 사서 얹는 하드웨어 공급자가 된다.
+- 순수 자율주행 회사에게는 기회이다. 이기면 모든 자동차 회사가 사 가는 기술 공급자가 된다. 웨이모는 2025년 Toyota와 [개인 차량에 웨이모의 기술을 넣는 방안](https://waymo.com/blog/2025/04/waymo-and-toyota-outline-strategic-partnership)을 함께 검토하기로 했고, Wayve는 2026년 9월 Mercedes-Benz와 [양산차 계약](https://wayve.ai/press/wayve-mercedes-benz-announce-production-agreement/)을 맺었다.
+
+입장은 다르지만 결국 같은 판이고, 이 판에서는 누구든 빠지는 쪽이 진다.
+다시 말해, **회사들이 돈을 붓는 이유는 성공 확률이 높아서가 아니라, 틀렸을 때의 손실보다 빠졌을 때의 손실이 더 크기 때문이다.**
 
 ### 12.
-틀렸을 때의 손실을 피하고자 하는 전략적 움직임은 현대자동차의 최근 몇 년 행보를 살펴보면 더 잘 이해가 된다.
+판에서 빠졌을 때의 손실을 피하고자 하는 전략적 움직임은 현대자동차의 최근 몇 년 행보를 살펴보면 더 잘 이해가 된다.
 
 1) 남들이 빠질 때 로보택시 회사 지분을 늘렸다
 - 2019년 Aptiv와 함께 40억 달러 규모의 합작사로 Motional을 세웠다. 2024년 Aptiv는 Motional에 더 이상 자금을 넣지 않겠다고 발표했다. 같은 시기 현대차그룹은 약 10억 달러를 더 넣었다. 이로써 지분이 50%에서 약 85%로 늘었다.
@@ -142,7 +152,7 @@ Uber는 2018년 자사 플랫폼의 이동 거리(약 260억 마일)가 진출 �
 **자동차 회사에게 로보택시는 택시 사업이 아니라, 자율주행 시대에도 차를 팔기 위한 보험에 가깝다.**
 
 ### 13.
-다시 처음으로 돌아와서, 사람들은 택시를 거의 안 탄다. 그래서 로보택시 회사는 택시 회사가 아니다. 이들이 노리는 건 택시 시장이 아니라 사람이 직접 운전하는 모든 이동이고, 이 시도가 실패했을 때의 손실보다 성공했을 때의 이득이 비대칭적으로 크다.
+다시 처음으로 돌아와서, 사람들은 택시를 거의 안 탄다. 그래서 로보택시 회사는 택시 회사가 아니다. 이들이 노리는 건 택시 시장이 아니라 사람이 직접 운전하는 모든 이동이고, 로보택시는 거기로 가는 첫 번째 정류장일 뿐이다. 이 판에서는 틀렸을 때보다 빠졌을 때의 손실이 더 크다.
 
 </div>
 
@@ -181,8 +191,6 @@ Uber says that the distance traveled on its platform in 2018 (about 26 billion m
 
 ### 4. 
 The real competitor for these companies is not taxis, but personal cars.
-- Tesla's [Q3 2024 earnings materials](https://www.sec.gov/Archives/edgar/data/1318605/000162828024043432/exhibit.htm).
-> "cost per mile below rideshare, personal car ownership and even public transit."
 - Uber's [2025 10-K](https://www.sec.gov/Archives/edgar/data/1543151/000154315126000015/uber-20251231.htm). Their competitor is personal cars first, and taxi companies second. 
 > Our Mobility offering competes with personal vehicle ownership and usage, which accounts for the majority of passenger miles in the markets that we serve, and traditional transportation services, including taxicab companies and taxi-hailing services, livery and other car services.
 - Uber estimated its total addressable market (TAM) at [$5.7 trillion](https://www.sec.gov/Archives/edgar/data/1543151/000119312519144716/d647752d424b4.htm). Of that, $4.7 trillion comes from 7.5 trillion miles of vehicle travel. Dividing it out, that's about $0.63 per mile.
@@ -191,12 +199,12 @@ The real competitor for these companies is not taxis, but personal cars.
 The number to watch is $0.63 per mile. As of 2025, the [cost of owning a new car](https://newsroom.aaa.com/2025/09/aaa-new-vehicle-costs-drop-to-11577/) is $11,577 a year. Assuming 15,000 miles of driving a year, that comes to about $0.77 per mile, almost the same level as Uber's target. In the end, Uber's goal is to offer customers rides for "the same money as driving their own car." **So the seat robotaxis are after is not the taxi driver's seat, but the driver's seat of the personal car.**
 
 ### 5. 
-The goal looks ambitious enough. So why haven't taxis beaten personal cars so far? **The answer is labor costs.**
+The goal looks ambitious enough. So why haven't taxis beaten personal cars so far? **On price alone, the biggest reason is labor costs.**
 - Lyft says it guarantees drivers [at least 70%](https://www.sec.gov/Archives/edgar/data/1759509/000175950925000025/lyft-20241231.htm) of weekly rider payments.
 - Uber's [2025 Mobility revenue](https://www.sec.gov/Archives/edgar/data/1543151/000154315126000015/uber-20251231.htm) was $29.67 billion, and its gross bookings were $97.5 billion. Uber keeps roughly 30%, and most of the rest goes to drivers.
 - [Goldman Sachs](https://www.goldmansachs.com/insights/articles/robotaxis-to-become-a-400-billion-dollar-market-in-2035) puts the cost of a personal car in the U.S. at $0.77–1.00 per mile, and ride-hailing at over $2 per mile. [ARK Invest](https://arkinvestmentmanagement.substack.com/p/robotaxis-are-coming-for-your-commute) puts the cost of U.S. ride-hailing at $2.80 per mile.  
 
-**The biggest reason taxis are still an 'occasional service' is that humans drive them.** Take out the driver, and the largest part of the cost structure disappears. This is also why companies are betting their lives on robotaxis.
+**The biggest reason taxis cost more than personal cars is that humans drive them.** Take out the driver, and the largest part of the cost structure disappears. **But is taking out the driver really enough to beat personal cars?**
 
 ### 6.
 This is not the first attempt to "replace personal cars." Ride-hailing in the 2010s told the same story. The results fell short of expectations.
@@ -227,41 +235,53 @@ The other side is interesting too.
 For both those who ride and those who say they won't, price is not the issue. **What's growing robotaxis right now is not 'cheap' but 'no driver.'**
 
 ### 9.
-So right now, two businesses overlap in robotaxis.
+To sum up so far, two businesses currently overlap in robotaxis.
 
-1) The first is a premium taxi business. This is the business generating revenue right now, and its competitors are Uber and Lyft.  
-2) The second is a personal car replacement business. This is the business that explains the valuations, and its competitor is people's personal cars. 
+1) The first is a premium taxi business. As we saw in section 8, it already sells despite being expensive, and it's the business generating revenue right now. Its competitors are Uber and Lyft.  
+2) The second is a personal car replacement business. As we saw in sections 5–7, its prices are still far off, but it's the business that explains the valuations. Its competitor is people's personal cars. 
 
 The market is clearly paying for the second business. [Morgan Stanley](https://sg.finance.yahoo.com/news/morgan-stanley-resets-alphabet-stock-010300083.html) calculates that Waymo's $126 billion valuation is about 4% of Alphabet's valuation. Meanwhile, current revenue comes mostly from the first business.
 And the premium of the first business is already shrinking. Waymo's premium over Uber has [shrunk from 30–40% to 12.7%](https://rideobi.com/tesla/).
 **The problem is that the conditions for winning these two businesses are almost exact opposites.** A premium taxi wins with expensive cars and a great experience. Personal car replacement can only win with cheap cars and high utilization.
 
 ### 10.
-The personal car replacement business faces three major challenges.  
+So to win, the personal car replacement business needs cheap cars and high utilization. But closing the price gap we saw in sections 5–7 isn't enough. Both conditions are much harder than they seem.  
 
-1) Empty cars  
+1) Utilization - empty cars  
 
 In Q2 2026, the share of Waymo's total miles driven with a passenger on board was [58.9%](https://www.cpuc.ca.gov/regulatory-services/licensing/transportation-licensing-and-analysis-branch/autonomous-vehicle-programs/quarterly-reporting). The remaining 41% were driven empty. 
 Personal cars pay no cost for this problem. My car doesn't have to come pick me up, and it doesn't drive around looking for the next passenger. **Robotaxis get rid of the driver cost, but in exchange take on the cost of empty cars, which personal cars never had.**
 
-2) Commute hours
+2) Utilization - commute hours
 
 A large share of personal car driving is commuting, and during commutes, everyone moves at the same time in the same direction. If you add robotaxis to match the commute peak, those cars sit idle during the day and at night. If you don't match the peak, there are no cars on the way to work.
 **The real competitive edge of personal cars is not price, but the fact that 'my car is always there, even at rush hour.'** 
 
-3) Personal cars can get cheaper too
+3) Price - personal cars can get cheaper too
 
 In a way, this is the most fundamental problem. The technology that makes robotaxis cheap also makes personal cars cheap.
-- [Goldman Sachs](https://www.goldmansachs.com/insights/articles/robotaxis-to-become-a-400-billion-dollar-market-in-2035) believes concerns that autonomous driving will greatly reduce car ownership are "overstated, at least for the next decade." Even if robotaxi costs fall below $1 per mile, "the hardware enabling those economics would be also affordable enough for consumers to own personally."
-- Uber also [admits](https://www.sec.gov/Archives/edgar/data/1543151/000154315126000015/uber-20251231.htm) that in the suburbs, "the cost of personal vehicle ownership is lower, and personal vehicle ownership is more convenient."
-- Motional's CEO also said in an [interview](https://techcrunch.com/2026/01/11/motional-puts-ai-at-center-of-robotaxi-reboot-as-it-targets-2026-for-driverless-service/), "I think the real long-term vision, you know, for all of this, is putting Level 4 on people's personal cars."
+- [Goldman Sachs](https://www.goldmansachs.com/insights/articles/robotaxis-to-become-a-400-billion-dollar-market-in-2035) believes concerns that autonomous driving will greatly reduce car ownership are exaggerated, at least for the next ten years. Even if robotaxi costs fall below $1 per mile, the hardware behind those costs would also become cheap enough for consumers to own themselves.
+> overstated, at least for the next decade ... the hardware enabling those economics would be also affordable enough for consumers to own personally
+- Motional's CEO also said in an [interview](https://techcrunch.com/2026/01/11/motional-puts-ai-at-center-of-robotaxi-reboot-as-it-targets-2026-for-driverless-service/) that the real long-term vision for all of this is putting Level 4 on people's personal cars.
+> I think the real long-term vision, you know, for all of this, is putting Level 4 on people's personal cars
 
 ### 11.
-Looking at all this, the idea of robotaxis replacing personal cars feels like the very distant future. So why do companies still pour money into it? 
-Because in the market beyond that, even a tiny share is enormous. In other words, **it's not because the odds of success are high, but because the loss from sitting out is bigger than the loss from being wrong.**
+Looking at all this, taking out the driver alone isn't enough to beat personal cars, and the idea of robotaxis replacing personal cars feels like the very distant future. So why do companies still pour money into it? 
+**In my view, the most convincing answer lies in "the technology built for robotaxis can make personal cars cheaper too."** The fact that the technology that makes robotaxis cheap also makes personal cars cheap is a weakness for the robotaxi business, but an opportunity for the company that owns the technology. What these companies are really building is not taxis, but technology that replaces the driver, and robotaxis are the first market where they can prove that technology on real roads while also making money.
+And in the market that technology is after, even a tiny share is enormous.
+
+- Taking just 1% of the 3.3238 trillion total vehicle miles traveled in the U.S. comes to about 33.2 billion miles. That's more than the roughly 24 billion miles of Uber and Lyft combined today.
+- Multiply that by the personal car cost of $0.77 per mile, and it's about $25.6 billion a year. That's close to Uber's 2025 Mobility revenue of $29.67 billion.
+
+On the other hand, the loss from sitting out is also big. But what that loss looks like depends on the company.
+- For carmakers, it's a threat. When autonomous driving eventually makes its way into personal cars, a carmaker without the technology becomes a hardware supplier that buys someone else's technology and puts it on its cars.
+- For pure autonomous driving companies, it's an opportunity. If they win, they become the technology supplier every carmaker buys from. In 2025, Waymo agreed with Toyota to [explore putting Waymo's technology into personal vehicles](https://waymo.com/blog/2025/04/waymo-and-toyota-outline-strategic-partnership), and in September 2026, Wayve signed a [production agreement](https://wayve.ai/press/wayve-mercedes-benz-announce-production-agreement/) with Mercedes-Benz.
+
+Their positions differ, but in the end it's the same game, and in this game, whoever sits out loses.
+In other words, **companies pour money in not because the odds of success are high, but because the loss from sitting out is bigger than the loss from being wrong.**
 
 ### 12.
-The strategic moves to avoid the loss from being wrong become clearer when you look at what Hyundai Motor has done over the past few years.
+The strategic moves to avoid the loss from sitting out of the game become clearer when you look at what Hyundai Motor has done over the past few years.
 
 1) It increased its stake in a robotaxi company while others pulled out
 - In 2019, it founded Motional with Aptiv as a $4 billion joint venture. In 2024, Aptiv announced it would no longer fund Motional. Around the same time, Hyundai Motor Group put in about $1 billion more. This raised its stake from 50% to about 85%.
@@ -282,7 +302,7 @@ When you think about why it made these four choices together, Hyundai seems to b
 **For a carmaker, robotaxis are not a taxi business, but something closer to insurance for continuing to sell cars in the age of autonomous driving.**
 
 ### 13.
-Coming back to where we started, people barely take taxis. That's why robotaxi companies are not taxi companies. What they're after is not the taxi market, but every trip a human drives, and the gain if this attempt succeeds is asymmetrically larger than the loss if it fails.
+Coming back to where we started, people barely take taxis. That's why robotaxi companies are not taxi companies. What they're after is not the taxi market, but every trip a human drives, and robotaxis are just the first stop on the way there. In this game, the loss from sitting out is bigger than the loss from being wrong.
 
 </div>
 
